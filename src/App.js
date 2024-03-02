@@ -8,7 +8,7 @@ import {
 import Login from "./Components/Login";
 import Main from "./Components/Main";
 import "./App.css";
-import { loginData } from "./mockData";
+//import { loginData } from "./mockData";
 
 const App = () => {
   const token = sessionStorage.getItem("token");

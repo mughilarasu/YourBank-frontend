@@ -12,7 +12,7 @@ import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
 import axios from "axios";
 import { endPoint } from "../endPoint";
-import { allAccounts } from "../mockData";
+//import { allAccounts } from "../mockData";
 
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -74,7 +74,8 @@ export default function SendMoney({
     try {
       const token = sessionStorage.getItem("token");
       let url = endPoint.baseUrl + "/api/transfer-money/";
-      const response = await axios.post(
+      //const response = 
+      await axios.post(
         url,
         {
           source_account_id: userAccountData.account_number,

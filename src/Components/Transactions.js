@@ -24,7 +24,7 @@ import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import axios from "axios";
 import moment from "moment";
 import { endPoint } from "../endPoint";
-import { transactionsHistory } from "../mockData";
+//import { transactionsHistory } from "../mockData";
 
 export default function Transactions({
   //   isAuthenticated,
@@ -35,9 +35,7 @@ export default function Transactions({
   //   setUserAccountData,
 }) {
   const [selectTransactionType, setSelectTransactionType] = React.useState("7");
-  const [transactionData, setTransactionData] = React.useState(
-    []
-  );
+  const [transactionData, setTransactionData] = React.useState([]);
   const [startDate, setStartDate] = React.useState(moment());
   const [endDate, setEndDate] = React.useState(moment());
   const [open, setOpen] = React.useState(false);
